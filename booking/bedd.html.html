@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  button {
+    background-color: #90EE90;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+</style>
+<title>Bed Booking Form</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Bed Booking Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="patientName">Patient Name</label>
+        <input type="text" id="patientName" name="patientName" required>
+      </div>
+      <div class="form-group">
+        <label for="contactEmail">Contact Email</label>
+        <input type="email" id="contactEmail" name="contactEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="severityLevel">Severity Level</label>
+        <select id="severityLevel" name="severityLevel">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+      </div>
+      <button type="submit">Book Bed</button>
+    </form>
+  </div>
+</body>
+</html>
